@@ -1,0 +1,112 @@
+/* General styling for the student dashboard */
+.student-dashboard {
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #251d9b; /* Deep dark greyish green for background */
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Soft shadow for a clean look */
+    max-width: 900px;
+    margin: 40px auto;
+    color: #ffffff; /* White text for easy readability */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+/* Hover effect for the entire dashboard background */
+.student-dashboard:hover {
+    background-color: #34495e; /* Slightly lighter shade on hover */
+}
+
+/* Welcome message */
+h2 {
+    color: #c0c0c0; /* Warm gold color for the welcome text */
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    letter-spacing: 1px; /* Slight spacing for added elegance */
+}
+
+/* Subheading for the meetings section */
+h3 {
+    margin-top: 30px;
+    color: #f7f7f7; /* Gold for the subheading */
+    font-size: 22px;
+    font-weight: normal;
+    text-align: center;
+    letter-spacing: 0.5px;
+}
+
+/* Error message styling */
+.error-message {
+    color: #e74c3c; /* Red color for error messages */
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 18px;
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 16px;
+    color: #ffffff; /* White color for text */
+}
+
+/* Table headers */
+th, td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd; /* Light grey border for table cells */
+}
+
+/* Table headers background color */
+th {
+    background-color: #251d9b; /* Darker greenish background for table headers */
+    color: #d1d1d1; /* Gold text for headers */
+    font-weight: bold;
+}
+
+/* Alternating row colors */
+tr:nth-child(even) {
+    background-color: #251d9b; /* Medium greenish grey for alternating rows */
+}
+
+/* Row hover effect only for the hovered row */
+tr:hover td {
+    background-color: #316683; /* Darker greyish green for hover effect */
+}
+
+/* Center the error and other text elements */
+.student-dashboard h2, 
+.student-dashboard h3, 
+.student-dashboard .error-message {
+    text-align: center;
+}
+
+/* Table cell text alignment */
+td {
+    text-align: center;
+}
+
+/* Table header text alignment */
+th {
+    text-align: center;
+}
+
+/* Smooth hover effects for buttons or clickable elements */
+button, .submit-button {
+    background-color: #f39c12; /* Gold for action buttons */
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover, .submit-button:hover {
+    background-color: #e67e22; /* Slightly darker gold for hover */
+    transform: translateY(-2px); /* Subtle hover effect */
+}

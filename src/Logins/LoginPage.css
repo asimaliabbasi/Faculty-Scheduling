@@ -1,0 +1,126 @@
+/* Basic layout for Login pages (Admin, Student, Teacher) */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #1e3c72, #09097e); /* Gradient background */
+  color: #fff;
+  font-family: 'Arial', sans-serif;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Title styling */
+h1 {
+  font-size: 36px;
+  margin-bottom: 40px;
+  text-align: center;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+/* Form container */
+form {
+  width: 100%;
+  max-width: 450px;
+  background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease-in-out;
+}
+
+form:hover {
+  transform: scale(1.02); /* Subtle zoom effect on hover */
+}
+
+form div {
+  margin-bottom: 25px;
+}
+
+/* Label and input styling */
+label {
+  font-size: 18px;
+  margin-bottom: 8px;
+  display: block;
+  font-weight: bold;
+  color: #fff;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 2px solid #ccc;
+  background-color: #f1f1f1;
+  transition: all 0.3s ease;
+}
+
+input:focus {
+  outline: none;
+  border-color: #1e3c72;
+  background-color: #fff;
+  box-shadow: 0 0 8px rgba(30, 60, 114, 0.6);
+}
+
+/* Button styles */
+button {
+  width: 100%;
+  padding: 14px;
+  font-size: 18px;
+  color: white;
+  background-color: #1e3c72;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #3e73a7;
+  transform: scale(1.05);
+}
+
+button:disabled {
+  background-color: #bbb;
+  cursor: not-allowed;
+}
+
+/* Error and success message */
+p {
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20px;
+}
+
+p.error {
+  color: red;
+}
+
+p.success {
+  color: green;
+}
+
+/* Back to Home button styling */
+.back-home {
+  background-color: transparent;
+  border: 2px solid #fff;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 20px;
+  transition: 0.3s;
+}
+
+.back-home:hover {
+  background-color: #fff;
+  color: #09097e;
+  transform: scale(1.05);
+}

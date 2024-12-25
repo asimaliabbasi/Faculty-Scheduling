@@ -1,0 +1,56 @@
+/* Home Page container */
+.home-page-container {
+  display: flex;
+  flex-direction: column; /* This will make buttons stack vertically */
+  justify-content: center; /* Center buttons vertically */
+  align-items: center; /* Center buttons horizontally */
+  height: 100vh;
+  background: linear-gradient(135deg, #09097e, #153672); /* Deep Navy Blue Gradient */
+  color: #fff;
+  font-size: 18px;
+}
+
+/* Title */
+h1 {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 40px; /* Increased margin to create more space between the title and the buttons */
+  color: #fff;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+/* Button Container */
+.home-page-container div {
+  display: flex;
+  flex-direction: column; /* Stack buttons vertically */
+  align-items: center; /* Center buttons horizontally */
+  gap: 20px; /* Add space between buttons */
+}
+
+/* Button Styles */
+button {
+  padding: 14px 20px;
+  background-color: #28a745 !important; /* Green button background */
+  color: white !important;
+  border: none !important;
+  border-radius: 5px !important; /* Rounded corners for the button */
+  font-size: 18px !important;
+  cursor: pointer !important;
+  margin: 10px !important;
+  transition: background-color 0.3s, transform 0.3s !important; /* Added transition for background and scale */
+  width: 200px !important; /* Set a fixed width for consistency */
+  text-align: center !important;
+}
+
+button:hover {
+  background-color: #218838 !important; /* Darker green on hover */
+  transform: scale(1.05) !important; /* Slightly enlarge the button on hover */
+}
+
+
+/* Disabled Button */
+button:disabled {
+  background-color: #bbb; /* Gray background for disabled state */
+  cursor: not-allowed;
+  transform: none; /* Remove hover effect on disabled */
+}
